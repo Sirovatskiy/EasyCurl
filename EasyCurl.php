@@ -115,7 +115,7 @@ class EasyCurl
 
 		foreach ($urls as $k => $url)
 		{
-            $this->ch[$k] = curl_init();
+			$this->ch[$k] = curl_init();
 
 			// headers
 			$headers[$k] = isset($headers[$k])? $headers[$k] + $this->static_headers : $this->static_headers;
